@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+
+<h2>Blog & Messages</h2>
+
+<% blogs.forEach(function(b){ %>
+    <div class="card p-3 shadow m-2">
+        <h4><%= b.title %></h4>
+        <p><%= b.content %></p>
+    </div>
+<% }) %>
+
+<%- include("partials/footer") %>

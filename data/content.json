@@ -1,0 +1,31 @@
+{
+  "subjects": [
+    {
+      "name": "Software Testing (STQA)",
+      "slug": "stqa",
+      "description": "Software Testing Notes and MS Teams",
+      "link": "https://teams.microsoft.com/your-stqa-link"
+    },
+    {
+      "name": "Artificial Intelligence",
+      "slug": "ai",
+      "description": "AI Subject and resources",
+      "link": "https://teams.microsoft.com/your-ai-link"
+    }
+  ],
+
+  "spiritual": [
+    {
+      "title": "Introduction to Jyotish",
+      "content": "Basic astrology principles...",
+      "link": "https://drive.google.com/your-link"
+    }
+  ],
+
+  "blogs": [
+    {
+      "title": "Power of Knowledge and Spirituality",
+      "content": "Your blog message here..."
+    }
+  ]
+}

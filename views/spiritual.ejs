@@ -1,0 +1,13 @@
+<%- include("partials/header") %>
+
+<h2>Spiritual & Astrology</h2>
+
+<% posts.forEach(function(p){ %>
+    <div class="card p-3 shadow m-2">
+        <h4><%= p.title %></h4>
+        <p><%= p.content %></p>
+        <a href="<%= p.link %>" target="_blank" class="btn btn-success">Open Material</a>
+    </div>
+<% }) %>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,21 @@
+<%- include("partials/header") %>
+
+<h2>Academic Subjects</h2>
+
+<div class="row">
+
+<% subjects.forEach(function(sub){ %>
+    <div class="col-md-4">
+        <div class="card p-3 shadow m-2">
+            <h4><%= sub.name %></h4>
+            <p><%= sub.description %></p>
+            <a href="/subject/<%= sub.slug %>" class="btn btn-primary">
+                Open MS Teams
+            </a>
+        </div>
+    </div>
+<% }) %>
+
+</div>
+
+<%- include("partials/footer") %>

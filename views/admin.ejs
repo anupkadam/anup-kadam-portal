@@ -1,0 +1,33 @@
+<%- include("partials/header") %>
+
+<h2>Admin Panel</h2>
+
+<h4>Add Subject</h4>
+<form action="/add-subject" method="POST">
+    <input name="name" placeholder="Subject name" class="form-control mb-2">
+    <input name="slug" placeholder="slug" class="form-control mb-2">
+    <input name="description" placeholder="description" class="form-control mb-2">
+    <input name="link" placeholder="MS Teams link" class="form-control mb-2">
+    <button class="btn btn-primary">Add Subject</button>
+</form>
+
+<hr>
+
+<h4>Add Spiritual Post</h4>
+<form action="/add-spiritual" method="POST">
+    <input name="title" placeholder="Title" class="form-control mb-2">
+    <textarea name="content" class="form-control mb-2"></textarea>
+    <input name="link" placeholder="Drive link" class="form-control mb-2">
+    <button class="btn btn-success">Add Post</button>
+</form>
+
+<hr>
+
+<h4>Add Blog</h4>
+<form action="/add-blog" method="POST">
+    <input name="title" class="form-control mb-2">
+    <textarea name="content" class="form-control mb-2"></textarea>
+    <button class="btn btn-warning">Publish</button>
+</form>
+
+<%- include("partials/footer") %>
