@@ -1,18 +1,14 @@
-fetch("data/content.json")
-.then(res => res.json())
-.then(data => {
+html += `<div class="subject-card portal-card">
+    <h3>${sub.name}</h3>
+    <p>${sub.description}</p>
 
-    let html = "";
+    <ul class="unit-list">
+      ${sub.units.map(u => `
+        <li>
+          ${u.title}
+          <a href="${u.link}" target="_blank" class="btn-success-custom">Open</a>
+        </li>`).join('')}
+    </ul>
 
-    data.subjects.forEach(sub => {
-        html += `
-        <div class="card p-3 shadow">
-            <h3>${sub.name}</h3>
-            <p>${sub.description}</p>
-            <a href="${sub.link}" target="_blank" class="btn btn-primary">Open MS Teams</a>
-        </div>
-        `;
-    });
-
-    document.getElementById("subjects").innerHTML = html;
-});
+    <a href="${sub.teams}" target="_blank" class="btn-primary-custom mt-2">Open MS Teams</a>
+</div>`;
